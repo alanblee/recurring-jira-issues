@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/alanblee/recurring-jira-issues/issues"
   },
-  "homepage": "https://github.com/alanblee/recurring-jira-issues#readme"
+  "homepage": "https://github.com/alanblee/recurring-jira-issues#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "reshuffle": "^1.0.5",
+    "reshuffle-jira-connector": "0.0.2"
+  }
 }
