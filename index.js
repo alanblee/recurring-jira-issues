@@ -23,28 +23,23 @@ const { JiraConnector } = require("reshuffle-jira-connector");
     };
   };
 
-  const checkIssues = async (num = 0) => {
+  const checkIssues = async (id = "") => {
     const boardIssues = await jira.sdk().getIssuesForBoard(1);
-    // console.log(boardIssues.issues[0]);
     for (const issue of boardIssues.issues) {
       const { fields } = issue;
-      if (fields.summary === "Recurring Issue") {
+      if (fields.summary === "Recurring Issue" || id) {
         return true;
       }
     }
     return false;
   };
-  const found = await checkIssues();
-  // console.log(found);
-  let number = 0;
+
+  let latestId;
+
   cronConnector.on({ expression: "1 * * * * *" }, async (event, app) => {
-    // look for the issue summary, keep note of it if its there.
-    // if not, create new issue with same summary and keep note of its id
-    // get all the issues from the board
-    const found = await checkIssues(number);
+    const foundIssue = await checkIssues(latestId);
     const { projectId, issueTypeId } = await getIDs();
-    if (!found) {
-      // if not found, then create a new
+    if (!foundIssue) {
       const newIssue = {
         fields: {
           project: { id: projectId },
@@ -54,7 +49,8 @@ const { JiraConnector } = require("reshuffle-jira-connector");
         },
       };
       const issue = await jira.sdk().addNewIssue(newIssue);
-      console.log(issue);
+      latestId = issue.id;
+      console.log("Issue created");
     } else {
       console.log("Issue already exists");
     }

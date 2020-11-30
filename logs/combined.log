@@ -253,3 +253,27 @@
 {"handlerId":"M-282MoE46pDcELqsWGL1","level":"error","message":"StatusCodeError: 400 - {\"errorMessages\":[],\"errors\":{\"issuetype\":\"issue type is required\"}}\n    at new StatusCodeError (/Users/alanlee/Desktop/reshuffle-projects/recurring-jira-issues/node_modules/request-promise-core/lib/errors.js:32:15)\n    at Request.plumbing.callback (/Users/alanlee/Desktop/reshuffle-projects/recurring-jira-issues/node_modules/request-promise-core/lib/plumbing.js:104:33)\n    at Request.RP$callback [as _callback] (/Users/alanlee/Desktop/reshuffle-projects/recurring-jira-issues/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at Request.self.callback (/Users/alanlee/Desktop/reshuffle-projects/recurring-jira-issues/node_modules/request/request.js:185:22)\n    at Request.emit (events.js:315:20)\n    at Request.<anonymous> (/Users/alanlee/Desktop/reshuffle-projects/recurring-jira-issues/node_modules/request/request.js:1154:10)\n    at Request.emit (events.js:315:20)\n    at IncomingMessage.<anonymous> (/Users/alanlee/Desktop/reshuffle-projects/recurring-jira-issues/node_modules/request/request.js:1076:12)\n    at Object.onceWrapper (events.js:421:28)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (_stream_readable.js:1225:12)\n    at processTicksAndRejections (internal/process/task_queues.js:84:21)","timestamp":"2020-11-25T23:21:01.984Z"}
 {"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-25T23:21:35.616Z"}
 {"level":"info","message":"Reshuffle Registering event CRON/RXkj8Nj1AkAGFuAjh3017/U040DpqEe1B1-gTSnc0TF","timestamp":"2020-11-25T23:21:36.317Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:47:10.491Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/fRwTPy2X4d4knjQFojYOq/P8tIvhI8YsD69TuDlEneg","timestamp":"2020-11-30T20:47:11.169Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:47:20.271Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/XnUnkhN1uLOiH1jLU2mu4/SY1vyL1wbP_tgOi6ckqq4","timestamp":"2020-11-30T20:47:21.142Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:47:40.672Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/on9GrCLLTP0RDcMvz4IHl/OEz-SAwBibcsJoktcnKIO","timestamp":"2020-11-30T20:47:41.414Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:47:57.975Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/7momlwGDaNTC-EXnvfYdJ/yKiFyIVcZI-XZjzZj11Rv","timestamp":"2020-11-30T20:47:58.011Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:48:08.091Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/FhQpIW8mrWwgQ7f2eo4DF/kZuljtGjqfXlIVWHeK1CZ","timestamp":"2020-11-30T20:48:08.159Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:49:45.218Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/EI8dKc9j0K11pExbIPbyp/WvaCbQMHCxbIPAASCMRrx","timestamp":"2020-11-30T20:49:45.235Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:50:35.626Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/ygSRCjd-ahkvJ-zeyiNG8/7OgOZgF52e2FA1uzstFz2","timestamp":"2020-11-30T20:50:35.637Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:50:55.032Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/cMvrHT6_yr3erCBNCSwV0/9MUs5oX2xv9CuteiQBK6T","timestamp":"2020-11-30T20:50:55.090Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:52:44.211Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/JP67QQ2kZiwwIXtd3sw0B/tXMey9LjvT2Vbhkic6qRB","timestamp":"2020-11-30T20:52:44.253Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:53:12.763Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/z5nUAUZD63p5FfMnAEOGp/T12yxjep9GxlirSVFIn0F","timestamp":"2020-11-30T20:53:12.825Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:53:26.421Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/5_BH-A1C2774FYED9oXoD/L5Z4nMQnlGB_ITgNQvhBa","timestamp":"2020-11-30T20:53:26.431Z"}
+{"level":"info","message":"Reshuffle Initializing","timestamp":"2020-11-30T20:53:32.436Z"}
+{"level":"info","message":"Reshuffle Registering event CRON/mT6El0J6KKQCn1WjmTkKu/YX5KZncucBkbP8T6Yx77_","timestamp":"2020-11-30T20:53:32.447Z"}
