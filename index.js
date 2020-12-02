@@ -4,7 +4,7 @@ const { JiraConnector } = require("reshuffle-jira-connector");
 
 (async () => {
   const app = new Reshuffle();
-  // Cront config
+  // Cron config
   const cronConnector = new CronConnector(app);
   // Jira Config
   const jira = new JiraConnector(app, {
@@ -15,13 +15,15 @@ const { JiraConnector } = require("reshuffle-jira-connector");
     baseURL: process.env.RUNTIME_BASE_URL,
   });
 
-  const getIDs = async () => {
-    const project = await jira.sdk().getProject("LEELEE");
-    return {
-      projectId: project.id,
-      issueTypeId: project.issueTypes[0].id,
-    };
-  };
+  // const { projectId, issueTypeId } = await (async () => {
+  //   const project = await jira.sdk().getProject("LEELEE");
+  //   return {
+  //     projectId: project.id,
+  //     issueTypeId: project.issueTypes[0].id,
+  //   };
+  // })();
+  const project = await jira.sdk().getProject("LEELEE");
+  const { id: projectId, issueTypeId = project.issueTypes[0].id } = project;
 
   const checkIssues = async (id = "") => {
     const boardIssues = await jira.sdk().getIssuesForBoard(1);
@@ -38,7 +40,6 @@ const { JiraConnector } = require("reshuffle-jira-connector");
 
   cronConnector.on({ expression: "1 * * * * *" }, async (event, app) => {
     const foundIssue = await checkIssues(latestId);
-    const { projectId, issueTypeId } = await getIDs();
     if (!foundIssue) {
       const newIssue = {
         fields: {
